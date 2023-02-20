@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.108.0">
+  <title>Product example · Bootstrap v5.3</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/product/">
+
+
+
+
+
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .nav1 {
+      background-color: rgba(0, 0, 0, 1);
+
+    }
+
+    .headerText {
+      color: aliceblue;
+
+    }
+
+    .pricing {
+      border: 0px;
+      box-shadow: 0 0 20px black;
+
+    }
+
+    .footerDiv {
+      flex-wrap: wrap;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer {
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+    }
+
+    .startnowbtn {
+      background-color: darkblue;
+      color: antiquewhite;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .background {
+      background: url(relax.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    .divOpacity {
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 20px;
+    }
+
+    #colorText {
+      color: aliceblue;
+    }
+
+    .color {
+      color: aliceblue;
+    }
+
+    .paddingLeft {
+      padding-left: 2vw;
+
+    }
+
+    .paddingRight {
+      padding-right: 2vw;
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="product.css" rel="stylesheet">
+</head>
+
+<body class="background">
+
+  <header class="site-header sticky-top py-1 nav1">
+    <nav class="container d-flex flex-column flex-md-row justify-content-between ">
+      <a class="py-2" href="#" aria-label="Product">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+          stroke-linecap="round" stroke-linejoin="round" stroke-width="4" class="d-block mx-auto" role="img"
+          viewBox="0 0 24 24">
+          <title href="http://127.0.0.1:5500/dashboard.html">RELAX</title>
+          <circle cx="12" cy="12" r="10" />
+
+          <path
+            d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
+        </svg>
+      </a>
+      <a class="py-2 d-none d-md-inline-block headerText" href="http://127.0.0.1:5500/home.html#">Home</a>
+      <a class="py-2 d-none d-md-inline-block headerText" href="http://127.0.0.1:5500/dashboard.html">Dashboard</a>
+      <a class="py-2 d-none d-md-inline-block headerText" href="http://127.0.0.1:5500/pricing.html">Pricing</a>
+      <a class="py-2 d-none d-md-inline-block headerText" href="http://127.0.0.1:5500/signin.html">Login Page</a>
+    </nav>
+  </header>
+
+  <main class="">
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center divOpacity ">
+      <div class="col-md-5 p-lg-5 mx-auto my-5 ">
+        <h1 class="display-4 fw-normal opacity1" id="textColor">RELAX <br>Online Inventory System</h1>
+        <p class="lead fw-normal" id="textColor">You can monitor your business ANYTIME ANYWHERE!</p>
+        <a class="btn btn-outline-secondary startnowbtn" href="#">Start Now!</a>
+      </div>
+      <div class="product-device shadow-sm d-none d-md-block"></div>
+      <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center paddingLeft">
+      <div class="col mainBackground ">
+        <div class="card mb-4 rounded-3 shadow-sm divOpacity ">
+          <div class="card-header py-3 ">
+            <h4 class="my-0 fw-normal opacity1">Free</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>1 user included</li>
+              <li>2 GB of storage</li>
+              <li>Email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+          </div>
+        </div>
+      </div>
+      <div class="col ">
+        <div class="card mb-4 rounded-3 shadow-sm divOpacity">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Pro</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>5 users included</li>
+              <li>10 GB of storage</li>
+              <li>Priority email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+          </div>
+        </div>
+      </div>
+      <div class="col paddingRight ">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary divOpacity ">
+          <div class="card-header py-3 text-bg-primary border-primary divOpacity">
+            <h4 class="my-0 fw-normal">Enterprise</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>10 users included</li>
+              <li>15 GB of storage</li>
+              <li>Phone and email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+
+  <div class="container" id="colorText">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0  color">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0  color">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0  color">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0  color">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0  color">About</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0  color">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0  color">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0  color">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0  color">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0  color">About</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0  color">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0  color">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0  color">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0  color">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0  color">About</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>&copy; 2022 Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#twitter" />
+              </svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#instagram" />
+              </svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#facebook" />
+              </svg></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
